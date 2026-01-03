@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="container">
+    <h1 class="title">⏱ Advanced Stopwatch</h1>
+
+    <!-- CIRCLE TIMER -->
+    <div class="circle">
+      <svg>
+        <circle cx="100" cy="100" r="90"></circle>
+      </svg>
+      <div id="display">00:00:00</div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+      <button class="btn start" onclick="startTimer()">Start</button>
+      <button class="btn pause" onclick="pauseTimer()">Pause</button>
+      <button class="btn reset" onclick="resetTimer()">Reset</button>
+      <button class="btn lap" onclick="addLap()">Lap</button>
+    </div>
+
+    <h2 class="lap-title">Lap Times</h2>
+    <ul id="laps"></ul>
+    <button id="deleteLapsBtn">Delete Lap History</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
